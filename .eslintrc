@@ -1,0 +1,22 @@
+{
+  "extends": ["@antfu/eslint-config-react"],
+  "rules": {
+    // 如果数组元素内或元素间有换行，则要求换行
+    // 如果数组元素的个数大于等于3，则要求换行
+    "array-bracket-newline": ["error", { "multiline": true, "minItems": 4 }],
+    // 要求在数组括号内使用一个或多个空格、或折行
+    "array-bracket-spacing": ["error", "always"],
+    // 禁止或强制在代码块中开括号前和闭括号后有空格
+    "block-spacing": "error",
+    // 大括号风格要求
+    "brace-style": "error",
+    // 禁止括号和其内部值之间的空格
+    "computed-property-spacing": ["error", "never"],
+    // 强制使用一致的缩进
+    "indent": "error",
+    // 禁止使用 空格 和 tab 混合缩进
+    "no-mixed-spaces-and-tabs": "error",
+    // 禁止使用未知的 DOM 属性
+    "react/no-unknown-property": 0
+  }
+}

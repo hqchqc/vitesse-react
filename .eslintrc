@@ -17,6 +17,18 @@
     // 禁止使用 空格 和 tab 混合缩进
     "no-mixed-spaces-and-tabs": "error",
     // 禁止使用未知的 DOM 属性
-    "react/no-unknown-property": 0
+    "react/no-unknown-property": 0,
+    // jsx 缩进
+    "react/jsx-indent": ["error", 2],
+    // jsx 属性
+    "react/jsx-max-props-per-line": [1, { "when": "multiline" }],
+    // jsx 属性第一个元素
+    "react/jsx-first-prop-new-line": ["error", "multiline-multiprop"],
+    // 强制或禁止在等号周围使用空格
+    "react/jsx-equals-spacing": [2, "never"],
+    // 不允许没有子组件的额外结束标记
+    "react/self-closing-comp": ["error", {"component": true, "html": true}],
+    // 强制执行右括号位置
+    "react/jsx-closing-bracket-location": [1, "tag-aligned"]
   }
 }

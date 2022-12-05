@@ -12,20 +12,35 @@ const Index: React.FC = () => {
 
   return (
     <div>
-      <div i-carbon-campsite text-4xl inline-block />
+      <div
+        i-carbon-campsite
+        text-4xl
+        inline-block
+      />
 
       <p>
-        <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
+        <a
+          rel="noreferrer"
+          href="https://github.com/antfu/vitesse"
+          target="_blank"
+        >
           Vitesse
         </a>
       </p>
+
       <p>
-        <em text-sm opacity-75>Opinionated Vite Starter Template</em>
+        <em
+          text-sm
+          opacity-75
+        >Opinionated Vite Starter Template</em>
       </p>
 
       <div py-4 />
 
-      <TheInput placeholder="What's your name?" setName={setName} />
+      <TheInput
+        placeholder="What's your name?"
+        setName={setName}
+      />
 
       <div>
         <button

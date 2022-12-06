@@ -32,7 +32,8 @@ const Index: React.FC = () => {
         <em
           text-sm
           opacity-75
-        >Opinionated Vite Starter Template</em>
+        >Opinionated Vite Starter Template
+        </em>
       </p>
 
       <div py-4 />

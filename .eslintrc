@@ -23,7 +23,7 @@
     // jsx结束标志的缩进
     "react/jsx-closing-tag-location": ["error", 2],
     // jsx 属性
-    "react/jsx-max-props-per-line": ["error", { "when": "multiline" }],
+    "react/jsx-max-props-per-line": ["error"],
     // jsx 属性第一个元素
     "react/jsx-first-prop-new-line": ["error", "multiline-multiprop"],
     // 强制或禁止在等号周围使用空格
@@ -31,6 +31,8 @@
     // 不允许没有子组件的额外结束标记
     "react/self-closing-comp": ["error", {"component": true, "html": true}],
     // 强制执行右括号位置
-    "react/jsx-closing-bracket-location": [1, "tag-aligned"]
+    "react/jsx-closing-bracket-location": [1, "tag-aligned"],
+    // jsx结束标记强制空格
+    "react/jsx-tag-spacing": ["error", {"beforeClosing": "never"}]
   }
 }

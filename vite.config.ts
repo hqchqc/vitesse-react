@@ -58,7 +58,7 @@ export default defineConfig({
       imports: [
         'react',
         'react-router-dom',
-        // { "usehooks-ts": ["useCounter", "useDarkMode"] },
+        { 'usehooks-ts': [ 'useDarkMode' ] },
       ],
       dts: true,
     }),

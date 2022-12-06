@@ -3,6 +3,7 @@
     "antfu.vite",
     "antfu.iconify",
     "antfu.unocss",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "vunguyentuan.vscode-postcss"
   ]
 }

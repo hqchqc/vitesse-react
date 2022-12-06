@@ -11,7 +11,7 @@ const Index: React.FC = () => {
   }
 
   return (
-    <div>
+    <>
       <div
         i-carbon-campsite
         text-4xl
@@ -52,7 +52,7 @@ const Index: React.FC = () => {
           Go
         </button>
       </div>
-    </div>
+    </>
   )
 }
 

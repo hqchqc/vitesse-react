@@ -12,16 +12,18 @@
     "brace-style": "error",
     // 禁止括号和其内部值之间的空格
     "computed-property-spacing": ["error", "never"],
-    // 强制使用一致的缩进
-    "indent": "error",
     // 禁止使用 空格 和 tab 混合缩进
     "no-mixed-spaces-and-tabs": "error",
     // 禁止使用未知的 DOM 属性
     "react/no-unknown-property": 0,
     // jsx 缩进
     "react/jsx-indent": ["error", 2],
+    // jsx 属性的缩进
+    "react/jsx-indent-props": ["error", 2],
+    // jsx结束标志的缩进
+    "react/jsx-closing-tag-location": ["error", 2],
     // jsx 属性
-    "react/jsx-max-props-per-line": [1, { "when": "multiline" }],
+    "react/jsx-max-props-per-line": ["error", { "when": "multiline" }],
     // jsx 属性第一个元素
     "react/jsx-first-prop-new-line": ["error", "multiline-multiprop"],
     // 强制或禁止在等号周围使用空格

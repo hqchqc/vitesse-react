@@ -4,6 +4,7 @@
     "antfu.iconify",
     "antfu.unocss",
     "dbaeumer.vscode-eslint",
-    "vunguyentuan.vscode-postcss"
+    "vunguyentuan.vscode-postcss",
+    "stylelint.vscode-stylelint"
   ]
 }

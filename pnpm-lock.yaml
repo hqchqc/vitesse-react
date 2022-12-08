@@ -11,6 +11,7 @@ specifiers:
   '@unocss/transformer-attributify-jsx': ^0.47.5
   '@vitejs/plugin-react': ^2.2.0
   eslint: ^8.29.0
+  jotai: ^1.11.1
   react: ^18.2.0
   react-dom: ^18.2.0
   react-router-dom: ^6.4.4
@@ -28,6 +29,7 @@ specifiers:
 
 dependencies:
   '@unocss/reset': registry.npmmirror.com/@unocss/reset/0.47.5
+  jotai: registry.npmmirror.com/jotai/1.11.1_react@18.2.0
   react: registry.npmmirror.com/react/18.2.0
   react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
   react-router-dom: registry.npmmirror.com/react-router-dom/6.4.4_biqbaboplfbrettd7655fr4n2y
@@ -4991,6 +4993,49 @@ packages:
     version: 1.16.0
     hasBin: true
     dev: true
+
+  registry.npmmirror.com/jotai/1.11.1_react@18.2.0:
+    resolution: {integrity: sha512-pHpaZUdvIpcS12ryMCrwtvmT/IovZAbicfrlll/Rb9394rwhqKoDFsDs0kv4oWtBy/XHHNv7iSZnQFmntiQj+w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jotai/-/jotai-1.11.1.tgz}
+    id: registry.npmmirror.com/jotai/1.11.1
+    name: jotai
+    version: 1.11.1
+    engines: {node: '>=12.20.0'}
+    peerDependencies:
+      '@babel/core': '*'
+      '@babel/template': '*'
+      jotai-immer: '*'
+      jotai-optics: '*'
+      jotai-redux: '*'
+      jotai-tanstack-query: '*'
+      jotai-urql: '*'
+      jotai-valtio: '*'
+      jotai-xstate: '*'
+      jotai-zustand: '*'
+      react: '>=16.8'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      '@babel/template':
+        optional: true
+      jotai-immer:
+        optional: true
+      jotai-optics:
+        optional: true
+      jotai-redux:
+        optional: true
+      jotai-tanstack-query:
+        optional: true
+      jotai-urql:
+        optional: true
+      jotai-valtio:
+        optional: true
+      jotai-xstate:
+        optional: true
+      jotai-zustand:
+        optional: true
+    dependencies:
+      react: registry.npmmirror.com/react/18.2.0
+    dev: false
 
   registry.npmmirror.com/js-sdsl/4.2.0:
     resolution: {integrity: sha512-dyBIzQBDkCqCu+0upx25Y2jGdbTGxE9fshMsCdK0ViOongpV+n5tXRcZY9v7CaVQ79AGS9KA1KHtojxiM7aXSQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/js-sdsl/-/js-sdsl-4.2.0.tgz}

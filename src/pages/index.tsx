@@ -23,8 +23,7 @@ const Index: React.FC = () => {
           rel="noreferrer"
           href="https://github.com/antfu/vitesse"
           target="_blank"
-        >
-          Vitesse
+        > Vitesse
         </a>
       </p>
 
@@ -32,7 +31,8 @@ const Index: React.FC = () => {
         <em
           text-sm
           opacity-75
-        >Opinionated Vite Starter Template
+        >
+          Opinionated Vite Starter Template
         </em>
       </p>
 

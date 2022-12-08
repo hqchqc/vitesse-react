@@ -5,6 +5,8 @@ import Pages from 'vite-plugin-pages'
 import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { VitePWA } from 'vite-plugin-pwa'
+import jotaiDebugLabel from 'jotai/babel/plugin-debug-label'
+import jotaiReactRefresh from 'jotai/babel/plugin-react-refresh'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,7 +20,7 @@ export default defineConfig({
     // see unocss.config.ts for config
     Unocss(),
 
-    react(),
+    react({ babel: { plugins: [ jotaiDebugLabel, jotaiReactRefresh ] } }),
 
     // https://github.com/hannoeru/vite-plugin-pages
     // 基于文件的路由
@@ -58,6 +60,7 @@ export default defineConfig({
       imports: [
         'react',
         'react-router-dom',
+        'jotai',
         { 'usehooks-ts': [ 'useDarkMode' ] },
       ],
       dts: true,

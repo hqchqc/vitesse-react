@@ -1,9 +1,10 @@
 import { useNavigate } from 'react-router-dom'
 import TheInput from '~/components/TheInput'
+import { savedNameAtom } from '~/store/user'
 
 const Index: React.FC = () => {
   const navigate = useNavigate()
-  const [ name, setName ] = useState('')
+  const [ name, setName ] = useAtom(savedNameAtom)
 
   const go = () => {
     if (name)
@@ -12,18 +13,17 @@ const Index: React.FC = () => {
 
   return (
     <>
-      <div
-        i-carbon-campsite
-        text-4xl
-        inline-block
-      />
+      <div className="text-4xl">
+        <div className="i-carbon-campsite inline-block" />
+      </div>
 
       <p>
         <a
           rel="noreferrer"
           href="https://github.com/antfu/vitesse"
           target="_blank"
-        > Vitesse
+        >
+          Vitesse
         </a>
       </p>
 
@@ -41,6 +41,7 @@ const Index: React.FC = () => {
       <TheInput
         placeholder="What's your name?"
         setName={setName}
+        name={name}
       />
 
       <div>
@@ -49,7 +50,7 @@ const Index: React.FC = () => {
           disabled={!name}
           onClick={go}
         >
-          Go
+          GO
         </button>
       </div>
     </>

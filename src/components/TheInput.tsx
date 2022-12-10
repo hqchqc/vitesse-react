@@ -1,17 +1,19 @@
 interface TheInputProps {
   placeholder: string
   setName: (name: string) => void
+  name: string
 }
 
 // Why not use React.FC ?
 // https://github.com/jsx-eslint/eslint-plugin-react/issues/2353
 const TheInput = (props: TheInputProps): JSX.Element => {
-  const { placeholder, setName } = props
+  const { placeholder, setName, name } = props
 
   return (
     <input
       id="input"
       type="text"
+      value={name}
       placeholder={placeholder}
       onChange={e => setName(e.target.value)}
       autoComplete="off"

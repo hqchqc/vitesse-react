@@ -1,24 +1,58 @@
+import { Link } from 'react-router-dom'
+import { otherNamesAtom, previousNamesAtom, savedNameAtom } from '~/store/user'
+
 const Name: React.FC = () => {
   const navigate = useNavigate()
   const params = useParams<{ name: string }>()
 
+  const [ savedName, setSavedName ] = useAtom(savedNameAtom)
+  const otherNames = useAtomValue(otherNamesAtom)
+  const setPreviousNames = useSetAtom(previousNamesAtom)
+
+  useEffect(() => {
+    if (savedName)
+      setPreviousNames(previousNames => previousNames.add(savedName))
+
+    setSavedName(params?.name || '')
+  })
+
   return (
     <div>
-      <div
-        i-carbon-pedestrian
-        text-4xl
-        inline-block
-      />
+      <div text-4xl>
+        <div className="i-carbon-pedestrian inline-block" />
+      </div>
+
       <p>
-        Hi, {params.name}
+        Hi, {params.name}!
       </p>
 
       <p
         text-sm
-        op50
+        opacity-75
       >
-        <em>Dynamic route!</em>
+        <em>Demo of dynamic route</em>
       </p>
+
+      <div className={`${otherNames.length ? '' : 'hidden'}`}>
+        <div className="text-sm mt-4">
+          <span opacity-75>Also known as:</span>
+          <ul>
+            {
+              otherNames.map(otherName => (
+                <li key={otherName}>
+                  <Link
+                    to={`/hi/${otherName}`}
+                    replace
+                  >
+                    {otherName}
+                  </Link>
+                </li>
+
+              ))
+            }
+          </ul>
+        </div>
+      </div>
 
       <div>
         <button

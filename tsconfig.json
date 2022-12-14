@@ -20,7 +20,6 @@
       "~/*": ["src/*"]
     }
   },
-  "include": ["src", "auto-imports.d.ts", "shims.d.ts"],
+  "include": ["src", "auto-imports.d.ts"],
   "exclude": ["dist", "node_modules"],
-  "references": [{ "path": "./tsconfig.node.json" }]
 }

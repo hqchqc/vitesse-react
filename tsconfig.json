@@ -20,6 +20,6 @@
       "~/*": ["src/*"]
     }
   },
-  "include": ["src", "auto-imports.d.ts"],
+  "include": ["src", "auto-imports.d.ts", "shims.d.ts"],
   "exclude": ["dist", "node_modules"],
 }

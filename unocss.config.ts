@@ -6,8 +6,8 @@ import {
   presetTypography,
   presetUno,
   presetWebFonts,
-  transformerAttributifyJsx,
 } from 'unocss'
+import transformerAttributifyJsx from '@unocss/transformer-attributify-jsx'
 
 export default defineConfig({
   shortcuts: [
@@ -15,7 +15,6 @@ export default defineConfig({
     [ 'icon-btn', 'text-[0.9em] inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600 !outline-none' ],
   ],
   presets: [
-    presetAttributify(),
     presetUno(),
     presetIcons({
       scale: 1.2,
@@ -29,6 +28,7 @@ export default defineConfig({
         mono: 'DM Mono',
       },
     }),
+    presetAttributify(),
   ],
   transformers: [ transformerAttributifyJsx() ],
   safelist: 'prose prose-sm m-auto text-left'.split(' '),

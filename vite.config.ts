@@ -15,6 +15,9 @@ export default defineConfig({
       '~/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
+  server: {
+    host: '0.0.0.0',
+  },
   plugins: [
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config

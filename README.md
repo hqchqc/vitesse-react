@@ -5,7 +5,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 <br>
 
 <p align='center'>
-<a href="#">Live Demo（暂未提供hhh）</a>
+<a href="#">自用模板~</a>
 </p>
 
 <br>

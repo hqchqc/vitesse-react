@@ -39,3 +39,5 @@ React version of <a href="https://github.com/antfu/vitesse">  Vitesse</a>
 - 💄 [styleLint](https://stylelint.io/) styleLint方案并保证css书写顺序
 
 - 🎣 [usehooks](https://usehooks-ts.com/) 好用的hooks
+
+- 🤖 [lodash](https://lodash.com/) 好用的工具函数

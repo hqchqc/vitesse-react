@@ -11,7 +11,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 <br>
 
 <p align='center'>
-React version of <a href="https://github.com/antfu/vitesse">  Vitesse</a>
+React version of <a href="https://github.com/antfu/vitesse">  Vitesse </a>
 </p>
 
 <br>
